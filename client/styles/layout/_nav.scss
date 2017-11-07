@@ -12,7 +12,7 @@
     }
 }
 
-// 
+//
 .nav-container {
     .md-button {
         text-align: left;
@@ -52,7 +52,7 @@
         }
 
         a {
-            font-size: 13px;
+            font-size: 16px;
             transition: all $nav-transition_duration ease-in-out;
             &:hover,
             &:focus,
@@ -111,11 +111,11 @@
                     font-size: 9px;
                     line-height: 19px;
                     transition: all .3s ease-in-out;
-                }                
+                }
             }
 
             > .icon-has-ul-h { // icon for horizontal nav
-                display: none; 
+                display: none;
             }
 
 
