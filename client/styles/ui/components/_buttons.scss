@@ -2,7 +2,7 @@
 // mixin
 @mixin button-line-variant($color, $background, $border) {
     color: $text-color;
-    background-color: transparent; 
+    background-color: transparent;
     border-color: $border;
 
     &:hover,
@@ -33,7 +33,7 @@
             line-height: ($size - 2px);
             i { line-height: ($size - 2px); }
         }
-    }    
+    }
 }
 
 @mixin social-button-variant($background, $border) {
@@ -46,8 +46,8 @@
         color: $reverse;
         text-decoration: none;
         background-color: darken($background, 8%);
-        border-color: darken($border, 12%)        
-    }    
+        border-color: darken($border, 12%)
+    }
 }
 @mixin button-state-color($background) {
     &:hover,
@@ -96,19 +96,35 @@
     @include button-line-variant($btn-dark-color, $btn-dark-bg, $btn-dark-border);
 }
 
+/* Customs buttons color */
+.aso-btn-green {
+    color:  #fff !important;
+    background-color: #26c6da !important;
+}
+
+.aso-btn-blue {
+    color:  #fff !important;
+    background-color: #29b6f6 !important;;
+}
+
+.aso-btn-dark-blue {
+    color:  #fff !important;
+    background-color: #0277bd !important;;
+}
+
 //
 .btn-w-xs { min-width: 80px; }
 .btn-w-sm { min-width: 100px; }
 .btn-w-md { min-width: 135px; }
 .btn-w-lg { min-width: 160px; }
 
-// 
+//
 .btn-round { border-radius: 2em; }
 .btn-gap { margin: 5px; }
 .btn-gap-h { margin: 0 5px; }
 .btn-gap-v { margin: 0 0 5px; }
 
-// 
+//
 .btn,
 .btn-group {
     &.btn-raised {
@@ -142,7 +158,7 @@
         }
         &:hover {
             @extend .z-depth-1-half;
-        }        
+        }
     }
 
     &.btn-raised,
@@ -184,7 +200,7 @@
 }
 
 
-// 
+//
 .btn-icon {
     padding: 0;
     display: inline-block;
@@ -210,7 +226,7 @@
         color: $reverse;
     }
 
-    // 
+    //
     &.btn-default-light {
         color: #bbb;
         border: 2px solid #bbb;
@@ -248,7 +264,7 @@
     &.btn-danger {
         color: $brand-danger;
         border-color: $brand-danger;
-    }  
+    }
 }
 .btn-icon-round {
     border-radius: 50%;
