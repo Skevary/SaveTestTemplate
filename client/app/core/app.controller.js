@@ -3,7 +3,7 @@
 
     angular.module('app')
         .controller('AppCtrl', [ '$scope', '$rootScope', '$state', '$document', 'appConfig', AppCtrl]); // overall control
-    
+
     function AppCtrl($scope, $rootScope, $state, $document, appConfig) {
 
         $scope.pageTransitionOpts = appConfig.pageTransitionOpts;
@@ -42,4 +42,4 @@
         });
     }
 
-})(); 
+})();

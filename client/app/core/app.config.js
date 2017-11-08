@@ -25,7 +25,7 @@
         var year = date.getFullYear();
         var main = {
             brand: 'asomobile',
-            name: 'Lisa',
+            name: 'Advert',
             year: year,
             layout: 'wide',                                 // String: 'boxed', 'wide'
             menu: 'vertical',                               // String: 'horizontal', 'vertical'
