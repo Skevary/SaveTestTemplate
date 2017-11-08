@@ -60,13 +60,12 @@
 
         <header data-ng-include=" 'app/layout/header.html' "
                  id="header"
-                 class="md-whiteframe-4dp header-container ng-scope header-fixed bg-dark "></header>
+                 class="header-container ng-scope header-fixed bg-dark md-whiteframe-4dp "></header>
 
         <div class="main-container"
              data-ng-class="{ 'app-nav-horizontal': main.menu === 'horizontal' }">
             <aside data-ng-include=" 'app/layout/sidebar.html' "
-                   id="nav-container"
-                   class="nav-container ng-scope nav-fixed bg-white nav-vertical">
+                   id="nav-container" class="nav-container ng-scope nav-fixed bg-white md-whiteframe-2dp">
             </aside>
 
 
@@ -74,8 +73,7 @@
             <div id="content" class="content-container">
                 <div class="page page-dashboard">
                 <div data-ng-include=" 'app/layout/appbar.html' "></div>
-                <section data-ui-view
-                             class="view-container {{main.pageTransition.class}}"></section>
+                <section data-ui-view class="view-container {{main.pageTransition.class}}"></section>
                 </div>
             </div>
 

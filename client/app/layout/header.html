@@ -4,8 +4,8 @@
     <!-- Logo -->
     <div class="logo bg-dark">
         <a href="#!/">
-            <span class="logo-icon"><img src="../../assets/images/logo/logo_blue_1_45.png"></span>
-            <span class="logo-text"><img src="../../assets/images/logo/logo_blue_2_45.png"></span>
+            <span class="logo-icon"><img src="../../assets/images/logo/logo_blue_1_36.png"></span>
+            <span class="logo-text"><img src="../../assets/images/logo/logo_blue_2_36.png"></span>
         </a>
     </div>
 
@@ -19,53 +19,14 @@
     <div class="top-nav">
         <ul class="nav-left list-unstyled">
             <li><md-button class="header-btn toggle-min" data-toggle-nav-collapsed-min aria-label="toggle-nav-collapsed-min"><i class="material-icons">menu</i></md-button></li>
-            <li>
-                <md-menu md-position-mode="left bottom">
-                    <md-button class="header-btn" aria-label="menu" ng-click="$mdMenu.open($event)">
-                        <i class="material-icons">email</i>
-                        <span class="badge">3</span>
-                    </md-button>
-                    <md-menu-content class="top-header-dropdown" width="4">
-                        <md-list class="md-dense">
-                            <md-list-item class="md-2-line" ng-click="null">
-                                <md-icon class="material-icons">mail_outline</md-icon>
-                                <div class="md-list-item-text">
-                                    <h3>New mail from David</h3>
-                                    <p>5 minutes ago</p>
-                                </div>
-                            </md-list-item>
-                            <md-list-item class="md-2-line" ng-click="null">
-                                <md-icon class="material-icons">chat_bubble_outline</md-icon>
-                                <div class="md-list-item-text">
-                                    <h3>Message from Jane</h3>
-                                    <p>15 minutes ago</p>
-                                </div>
-                            </md-list-item>
-                            <md-list-item class="md-2-line" ng-click="null">
-                                <md-icon class="material-icons">person_outline</md-icon>
-                                <div class="md-list-item-text">
-                                    <h3>New member John joined</h3>
-                                    <p>1 hour ago</p>
-                                </div>
-                            </md-list-item>
-                        </md-list>
-                    </md-menu-content>
-                </md-menu>
-            </li>
-            <li class="search-box visible-md visible-lg">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="material-icons">search</i></span>
-                    <input type="text" class="form-control" placeholder="{{ 'SEARCH' | translate }}">
-                    <span class="input-bar"></span>
-                </div>
-            </li>
         </ul>
 
         <ul class="nav-right pull-right list-unstyled">
-            <li>
+            <li style="padding-right: 100px">
                 <md-menu md-position-mode="target-right target">
-                    <md-button class="header-btn" aria-label="menu" ng-click="$mdMenu.open($event)">
-                        <img src="assets/images/g1.jpg" alt="" class="img-circle img30_30">
+                    <md-button class="header-btn" aria-label="menu" ng-click="$mdMenu.open($event)" style="padding: 0 15px 0">
+                        <i class="fa fa-user" style="font-size: 30px; text-align: center;"></i>
+                        <span style="padding-left: 15px">{{main.name}}</span>
                     </md-button>
                     <md-menu-content class="top-header-dropdown" width="3">
                         <md-menu-item><md-button aria-label="menu" ng-href="#!/"><md-icon class="material-icons">assignment</md-icon><span data-translate="DASHBOARD"></span></md-button></md-menu-item>
