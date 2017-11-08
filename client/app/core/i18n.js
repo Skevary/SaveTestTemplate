@@ -33,33 +33,25 @@
     }
 
     function LangCtrl($scope, $translate) {
-        $scope.activeLang = 'english';
+        $scope.activeLang = 'EN';
         $scope.setLang = setLang;
 
         $scope.langs = [
-            'english',
-            'spanish',
-            'chinese',
-            'japanese'
+            'EN',
+            'RU',
         ]
 
         function setLang (lang) {
             switch (lang) {
-                case 'english':
+                case 'EN':
                     $translate.use('en');
                     break;
-                case 'spanish':
-                    $translate.use('es');
-                    break;
-                case 'chinese':
-                    $translate.use('zh');
-                    break;
-                case 'japanese':
-                    $translate.use('ja');
+                case 'RU':
+                    $translate.use('ru');
                     break;
             }
             return $scope.activeLang = lang;
         };
     }
 
-})(); 
+})();

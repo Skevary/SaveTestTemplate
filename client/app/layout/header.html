@@ -25,7 +25,7 @@
             <li style="padding-right: 100px">
                 <md-menu md-position-mode="target-right target">
                     <md-button class="header-btn" aria-label="menu" ng-click="$mdMenu.open($event)" style="padding: 0 15px 0">
-                        <i class="fa fa-user" style="font-size: 30px; text-align: center;"></i>
+                        <i class="fa fa-user" style="font-size: 20px;"></i>
                         <span style="padding-left: 15px">{{main.name}}</span>
                     </md-button>
                     <md-menu-content class="top-header-dropdown" width="3">
@@ -38,7 +38,7 @@
             <li class="hidden-xs hidden-sm" data-ng-controller="LangCtrl as ctrl">
                 <md-menu md-position-mode="target-right target">
                     <md-button class="active-flag" aria-label="menu" ng-click="$mdMenu.open($event)">
-                        <div class="flag flags-{{activeLang}}"></div>
+                        <div class="flag">{{activeLang}}</div>
                     </md-button>
                     <md-menu-content width="3" class="langs">
                         <md-menu-item ng-repeat="lang in langs">
