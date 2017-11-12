@@ -6,14 +6,8 @@
             function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
                 var routes, setRoutes;
 
-                routes = [
-                    'ui/cards', 'ui/typography', 'ui/buttons', 'ui/icons', 'ui/grids', 'ui/widgets', 'ui/components', 'ui/timeline', 'ui/lists', 'ui/pricing-tables',
-                    'table/static', 'table/responsive', 'table/data',
-                    'form/elements', 'form/layouts', 'form/validation',
-                    'chart/echarts', 'chart/echarts-line', 'chart/echarts-bar', 'chart/echarts-pie', 'chart/echarts-scatter', 'chart/echarts-more',
-                    'page/404', 'page/500', 'page/blank', 'page/forgot-password', 'page/invoice', 'page/lock-screen', 'page/profile', 'page/signin', 'page/signup',
-                    'app/calendar'
-                ]
+                // Set your routes
+                routes = [];
 
                 setRoutes = function (route) {
                     var config, url;
