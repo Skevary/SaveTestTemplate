@@ -29,7 +29,7 @@
                     $rootScope.$broadcast('nav:reset');
                 }
                 return e.preventDefault();
-            });            
+            });
         }
     }
 
@@ -105,7 +105,7 @@
                 clearTimeout(t);
                 t = setTimeout(updateClass, 300);
             });
-          
+
         }
     }
 
@@ -168,12 +168,12 @@
         function link(scope, ele, attrs) {
             ele.on('click', function() {
                 return $('#app').toggleClass('on-canvas');
-            });         
+            });
         }
     }
 
 
-})(); 
+})();
 
 
 

@@ -34,6 +34,8 @@
                 $urlRouterProvider
                     .when('/', '/dashboard')
                     .otherwise('/dashboard');
+
+
             }
         ]);
 

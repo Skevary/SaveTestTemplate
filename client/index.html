@@ -73,7 +73,7 @@
             <div id="content" class="content-container">
                 <div class="page page-dashboard">
                 <div data-ng-include=" 'app/layout/appbar.html' "></div>
-                <section data-ui-view class="view-container {{main.pageTransition.class}}"></section>
+                <section ng- data-ui-view class="view-container {{main.pageTransition.class}}"></section>
                 </div>
             </div>
 
@@ -113,13 +113,15 @@
         <!-- inject:js -->
         <script src="app/app.module.js"></script>
         <script src="app/core/core.module.js"></script>
+        <script src="app/layout/appbar.module.js"></script>
         <script src="app/layout/layout.module.js"></script>
-        <script src="app/dashboard/dashboard.controller.js"></script>
         <script src="app/core/app.config.js"></script>
         <script src="app/core/app.controller.js"></script>
         <script src="app/core/config.lazyload.js"></script>
         <script src="app/core/config.route.js"></script>
         <script src="app/core/i18n.js"></script>
+        <script src="app/dashboard/dashboard.controller.js"></script>
+        <script src="app/layout/appbar.controller.js"></script>
         <script src="app/layout/layout.diretive.js"></script>
         <script src="app/layout/loader.js"></script>
         <script src="app/layout/sidebar.directive.js"></script>

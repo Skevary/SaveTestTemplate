@@ -3,19 +3,19 @@
 
     angular.module('app.core', [
         // Angular modules
-         'ngAnimate'
-        ,'ngAria'
-        ,'ngMessages'
+        'ngAnimate',
+        'ngAria',
+        'ngMessages',
 
         // Custom modules
-        ,'app.layout'
-        ,'app.i18n'
-        
+        'app.layout',
+        'app.i18n',
+
         // 3rd Party Modules
-        ,'oc.lazyLoad'
-        ,'ngMaterial'
-        ,'ui.router'
-        ,'duScroll'
+        'oc.lazyLoad',
+        'ngMaterial',
+        'ui.router',
+        'duScroll'
     ]);
 
 })();
