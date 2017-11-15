@@ -51,7 +51,7 @@
             pageTransitionOpts: pageTransitionOpts,
             main: main,
             color: color
-        }
+        };
     }
 
     function mdConfig($mdThemingProvider) {

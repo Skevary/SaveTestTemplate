@@ -37,7 +37,7 @@
         }, true);
 
 
-        $rootScope.$on("$stateChangeSuccess", function (event, currentRoute, previousRoute) {
+        $rootScope.$on('$stateChangeSuccess', function (event, currentRoute, previousRoute) {
             $document.scrollTo(0, 0);
         });
     }
