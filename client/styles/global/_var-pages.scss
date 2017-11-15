@@ -17,13 +17,13 @@ $main_container_bg:         #efefef;
 $nav-transition_duration: .25s;
 
 $light_bg_link_hover_bg:             transparent; //#f6f6f6;
-$light_bg_link_hover_color:          $brand-primary;
+$light_bg_link_hover_color:          #039BE5;
 $light_bg_link_active_bg:            #f6f6f6;
-$light_bg_link_active_color:         $brand-primary;
+$light_bg_link_active_color:         #039BE5;
 $light_bg_link_open_bg:              $light_bg_link_active_bg;      // vertical nav only
 $light_bg_link_open_color:           $light_bg_link_active_color;   // vertical nav only
 $light_bg_sub_nav_bg:                $light_bg_link_active_bg;
-$light_bg_sub_link_active_color:     $brand-primary;
+$light_bg_sub_link_active_color:     #039BE5;
 
 $dark_bg_link_hover_bg:              transparent;
 $dark_bg_link_hover_color:           rgba(255,255,255,.8);

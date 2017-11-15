@@ -5,6 +5,7 @@
     background-size: cover;
     width: 100%;
     height: $app-bar-height;
+    margin-bottom: 18px;
 
     @media (max-width: 556px) {
         height: $app-bar-height + $btn-height;
