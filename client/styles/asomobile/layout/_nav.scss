@@ -1,0 +1,12 @@
+@import "appbar";
+
+.nav-image {
+    background-image: url(../../assets/images/background/3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: $app-bar-height;
+
+    @media (max-width: 556px) {
+        height: $app-bar-height + $btn-height;
+    }
+}

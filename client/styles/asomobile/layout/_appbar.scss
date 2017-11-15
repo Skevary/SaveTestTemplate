@@ -1,0 +1,22 @@
+@import "../ui/buttons";
+
+$padding-top-bottom: 37px;
+$app-bar-height: $padding-top-bottom + $padding-top-bottom + $btn-height;
+
+.aso-appbar {
+    padding: $padding-top-bottom 0;
+
+    .row {
+        .col-xs-3 {
+            height: $btn-height;
+
+            h1 {
+                line-height: 13px;
+            }
+        }
+
+        .col-sm-9 {
+            height: $btn-height;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// mixin
+@mixin aso-buttons($background-color, $max-width) {
+    color:  #fff !important;
+    background-color: $background-color !important;
+    max-width: $max-width !important;
+    height: $btn-height;
+}
+//
+
+// variable
+$long-btn-width: 140px;
+$short-btn-width: 100px;
+$btn-height: 40px;
+//
+
+// styles
+.aso-btn-group {
+    display: -webkit-box !important;
+    max-width: $long-btn-width + $long-btn-width + $short-btn-width;
+}
+
+.aso-btn-green {
+    @include aso-buttons(#26c6da, $long-btn-width);
+}
+
+.aso-btn-blue {
+    @include aso-buttons(#29b6f6, $long-btn-width);
+}
+
+.aso-btn-dark-blue {
+    @include aso-buttons(#0277bd, $short-btn-width);
+}
+//
