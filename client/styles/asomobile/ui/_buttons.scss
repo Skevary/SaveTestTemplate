@@ -16,7 +16,7 @@ $btn-height: 40px;
 // styles
 .aso-btn-group {
     display: -webkit-box !important;
-    max-width: $long-btn-width + $long-btn-width + $short-btn-width;
+    max-width: ($long-btn-width * 2) + $short-btn-width;
 }
 
 .aso-btn-green {

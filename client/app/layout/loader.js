@@ -1,9 +1,9 @@
 (function () {
     $(window).on('load', function(){
-        setTimeout( hideLoader , 1000)
+        setTimeout( hideLoader , 1000);
     });
 
     function hideLoader() {
-        $('#loader-container').fadeOut("slow")
-    }    
-})(); 
+        $('#loader-container').fadeOut('slow');
+    }
+})();

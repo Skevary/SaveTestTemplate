@@ -18,24 +18,39 @@
 
     <div class="top-nav">
         <ul class="nav-left list-unstyled">
-            <li><md-button class="header-btn toggle-min" data-toggle-nav-collapsed-min aria-label="toggle-nav-collapsed-min"><i class="material-icons">menu</i></md-button></li>
+            <li>
+                <md-button class="header-btn toggle-min" data-toggle-nav-collapsed-min
+                           aria-label="toggle-nav-collapsed-min"><i class="material-icons">menu</i></md-button>
+            </li>
         </ul>
 
         <ul class="nav-right pull-right list-unstyled">
-            <li>
+            <li class="hidden-xs">
                 <md-menu md-position-mode="target-right target">
-                    <md-button class="header-btn" aria-label="menu" ng-click="$mdMenu.open($event)" style="padding: 0 15px 0">
-                        <i class="fa fa-user" style="font-size: 20px;"></i>
-                        <span style="padding-left: 15px">{{main.name}}</span>
+                    <md-button class="header-btn aso-header-btn" aria-label="menu" ng-click="$mdMenu.open($event)">
+                        <i class="fa fa-user aso-menu-icon"></i>
+                        <span>{{main.name}}</span>
                     </md-button>
                     <md-menu-content class="top-header-dropdown" width="3">
-                        <md-menu-item><md-button aria-label="menu" ng-href="#!/"><md-icon class="material-icons">assignment</md-icon><span data-translate="DASHBOARD"></span></md-button></md-menu-item>
-                        <md-menu-item><md-button aria-label="menu" ng-href="#!/page/profile"><md-icon class="material-icons">lock_outline</md-icon><span data-translate="MY_PROFILE"></span></md-button></md-menu-item>
-                        <md-menu-item><md-button aria-label="menu" ng-href="#!/page/signin"><md-icon class="material-icons">keyboard_tab</md-icon><span data-translate="LOG_OUT"></span></md-button></md-menu-item>
+                        <md-menu-item>
+                            <md-button aria-label="menu" ng-href="#!/">
+                                <md-icon class="material-icons">assignment</md-icon>
+                                <span data-translate="DASHBOARD"></span></md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button aria-label="menu" ng-href="#!/page/profile">
+                                <md-icon class="material-icons">lock_outline</md-icon>
+                                <span data-translate="MY_PROFILE"></span></md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button aria-label="menu" ng-href="#!/page/signin">
+                                <md-icon class="material-icons">keyboard_tab</md-icon>
+                                <span data-translate="LOG_OUT"></span></md-button>
+                        </md-menu-item>
                     </md-menu-content>
                 </md-menu>
             </li>
-            <li class="hidden-xs hidden-sm" data-ng-controller="LangCtrl as ctrl">
+            <li class="hidden-xs" data-ng-controller="LangCtrl as ctrl">
                 <md-menu md-position-mode="target-right target">
                     <md-button class="active-flag" aria-label="menu" ng-click="$mdMenu.open($event)">
                         <div class="flag">{{activeLang}}</div>
@@ -44,7 +59,7 @@
                         <md-menu-item ng-repeat="lang in langs">
                             <md-button ng-click="setLang(lang)">
                                 <div class="flag flags-{{lang}}"></div>
-                                <span class="lang-text" >{{lang}}</span>
+                                <span class="lang-text">{{lang}}</span>
                             </md-button>
                         </md-menu-item>
                     </md-menu-content>

@@ -1,7 +1,7 @@
 @import "../ui/buttons";
 
 $padding-top-bottom: 37px;
-$app-bar-height: $padding-top-bottom + $padding-top-bottom + $btn-height;
+$app-bar-height: ($padding-top-bottom * 2) + $btn-height;
 
 .aso-appbar {
     padding: $padding-top-bottom 0;
@@ -12,6 +12,10 @@ $app-bar-height: $padding-top-bottom + $padding-top-bottom + $btn-height;
 
             h1 {
                 line-height: 13px;
+            }
+
+            @media (max-width: 556px) {
+                margin-bottom: 10px;
             }
         }
 

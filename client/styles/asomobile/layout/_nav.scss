@@ -7,7 +7,9 @@
     height: $app-bar-height;
     margin-bottom: 18px;
 
+    transition: width, height 0.25s ease-in-out;
+
     @media (max-width: 556px) {
-        height: $app-bar-height + $btn-height;
+        height: $app-bar-height + $btn-height + 10px;
     }
 }
