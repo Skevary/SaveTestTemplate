@@ -34,7 +34,7 @@
             $scope.activeLang = lang;
 
             return $scope.activeLang;
-        };
+        }
     }
 
 })();

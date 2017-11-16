@@ -9,14 +9,16 @@ $app-bar-height: ($padding-top-bottom * 2) + $btn-height;
     .row {
         .col-xs-3 {
             height: $btn-height;
+        }
 
-            h1 {
-                line-height: 13px;
-            }
+        h1 {
+            line-height: 13px;
+            word-wrap: normal;
+            white-space: nowrap;
+        }
 
-            @media (max-width: 556px) {
-                margin-bottom: 10px;
-            }
+        @media (max-width: 556px) {
+            margin-bottom: 10px;
         }
 
         .col-sm-9 {

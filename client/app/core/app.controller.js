@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('app')
-        .controller('AppCtrl', [ '$scope', '$rootScope', '$state', '$document', 'appConfig', AppCtrl]); // overall control
+        .controller('AppCtrl', ['$scope', '$rootScope', '$state', '$document', 'appConfig', AppCtrl]); // overall control
 
     function AppCtrl($scope, $rootScope, $state, $document, appConfig) {
 
@@ -35,7 +35,6 @@
                 $scope.main.fixedSidebar = false;
             }
         }, true);
-
 
         $rootScope.$on('$stateChangeSuccess', function (event, currentRoute, previousRoute) {
             $document.scrollTo(0, 0);

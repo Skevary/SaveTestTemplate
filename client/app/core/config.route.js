@@ -24,7 +24,6 @@
                     return setRoutes(route);
                 });
 
-
                 $stateProvider
                     .state('dashboard', {
                         url: '/dashboard',
@@ -34,7 +33,6 @@
                 $urlRouterProvider
                     .when('/', '/dashboard')
                     .otherwise('/dashboard');
-
 
             }
         ]);

@@ -113,7 +113,7 @@
     function highlightActive() {
         var directive = {
             restrict: 'A',
-            controller: [ '$scope', '$element', '$attrs', '$location', highlightActiveCtrl]
+            controller: ['$scope', '$element', '$attrs', '$location', highlightActiveCtrl]
         };
 
         return directive;
@@ -172,8 +172,5 @@
         }
     }
 
-
 })();
-
-
 

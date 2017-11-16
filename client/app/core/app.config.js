@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular.module('app.core')
@@ -37,14 +37,14 @@
             link: 'https://themeforest.net/item/material-design-admin-with-angularjs/13582227'
         };
         var color = {
-            primary:    '#009688',
-            success:    '#8BC34A',
-            info:       '#00BCD4',
-            infoAlt:    '#7E57C2',
-            warning:    '#FFCA28',
-            danger:     '#F44336',
-            text:       '#3D4051',
-            gray:       '#EDF0F1'
+            primary: '#009688',
+            success: '#8BC34A',
+            info: '#00BCD4',
+            infoAlt: '#7E57C2',
+            warning: '#FFCA28',
+            danger: '#F44336',
+            text: '#3D4051',
+            gray: '#EDF0F1'
         };
 
         return {
@@ -58,16 +58,15 @@
         var cyanAlt = $mdThemingProvider.extendPalette('cyan', {
             'contrastLightColors': '500 600 700 800 900',
             'contrastStrongLightColors': '500 600 700 800 900'
-        })
+        });
         var lightGreenAlt = $mdThemingProvider.extendPalette('light-green', {
             'contrastLightColors': '500 600 700 800 900',
             'contrastStrongLightColors': '500 600 700 800 900'
-        })
+        });
 
         $mdThemingProvider
             .definePalette('cyanAlt', cyanAlt)
             .definePalette('lightGreenAlt', lightGreenAlt);
-
 
         $mdThemingProvider.theme('default')
             .primaryPalette('teal', {
