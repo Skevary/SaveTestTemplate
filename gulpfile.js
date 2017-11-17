@@ -3,6 +3,7 @@ var args = require('yargs').argv;
 var browserSync = require('browser-sync');
 var config = require('./gulp.config')();
 var del = require('del');
+var history = require('connect-history-api-fallback');
 var $ = require('gulp-load-plugins')({lazy: true});
 
 gulp.task('help', $.taskListing);
@@ -191,6 +192,7 @@ function startBrowserSync(opt) {
             forms: false,
             scroll: true
         },
+        middleware:[history()],
         injectChanges: true,
         logFileChanges: true,
         logLevel: 'debug',

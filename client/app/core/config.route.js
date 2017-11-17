@@ -2,12 +2,12 @@
     'use strict';
 
     angular.module('app')
-        .config(['$stateProvider', '$urlRouterProvider',
-            function ($stateProvider, $urlRouterProvider) {
+        .config(['$stateProvider', '$urlRouterProvider','$locationProvider',
+            function ($stateProvider, $urlRouterProvider, $locationProvider) {
                 var routes, setRoutes;
 
                 // Set your routes
-                routes = [];
+                routes = ['some/market-analysis'];
 
                 setRoutes = function (route) {
                     var config, url;
@@ -34,6 +34,7 @@
                     .when('/', '/dashboard')
                     .otherwise('/dashboard');
 
+                $locationProvider.html5Mode(true);
             }
         ]);
 
