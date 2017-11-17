@@ -2,10 +2,11 @@
     'use strict';
 
     angular.module('app.appbar')
-        .controller('AppBarCtrl', ['$scope', '$location', AppBarCtrl]);
+        .controller('AppBarCtrl', ['$scope', AppBarCtrl]);
 
-    function AppBarCtrl($scope, $location) {
-        $scope.header =  $location.path().substr(1).replace(/\b\w/g, s => s.toUpperCase());
+    function AppBarCtrl($scope) {
+        $scope.$watch(function () {
+            $scope.header = $('li.active').find('span').text();
+        });
     }
-
 })();
