@@ -7,7 +7,7 @@
                 var routes, setRoutes;
 
                 // Set your routes
-                routes = ['some/market-analysis'];
+                routes = [];
 
                 setRoutes = function (route) {
                     var config, url;

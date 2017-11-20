@@ -9,7 +9,7 @@ $app-bar-height: ($padding-top-bottom * 2) + $btn-height;
     .row {
         .aso-header-wrapper {
             height: $btn-height;
-
+            width: initial;
             h1 {
                 line-height: 13px;
                 word-wrap: normal;
@@ -24,6 +24,8 @@ $app-bar-height: ($padding-top-bottom * 2) + $btn-height;
 
         .aso-appbar-wrapper {
             height: $btn-height;
+            width: auto;
+            float: inherit;
 
             .aso-lang-text {
                 text-transform: capitalize !important;;
@@ -53,6 +55,7 @@ $app-bar-height: ($padding-top-bottom * 2) + $btn-height;
     }
 }
 
+// When you open the menu
 .md-open {
     .aso-dropdown-icon {
         transform: rotate(180deg);

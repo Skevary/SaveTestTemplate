@@ -10,7 +10,7 @@
         $scope.main = appConfig.main;
         $scope.color = appConfig.color;
 
-        $scope.$watch('main', function(newVal, oldVal) {
+        $scope.$watch('main', function (newVal, oldVal) {
             // if (newVal.menu !== oldVal.menu || newVal.layout !== oldVal.layout) {
             //     $rootScope.$broadcast('layout:changed');
             // }

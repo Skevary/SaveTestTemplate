@@ -1,10 +1,10 @@
 <div class="aso-appbar" ng-controller="AppBarCtrl">
     <div class="row">
-        <div class="col-xs-3 aso-header-wrapper">
+        <div class="col-xs-3 col-xs-auto aso-header-wrapper">
             <h1 class="section-header">{{header}}</h1>
         </div>
-        <div class="col-sm-9 aso-appbar-wrapper">
-            <md-menu md-position-mode="target"md-offset="0 40">
+        <div class="col-sm-9 col-sm-auto aso-appbar-wrapper">
+            <md-menu md-position-mode="target" md-offset="0 40">
 
                 <div class="aso-btn-group md-button-group pull-right md-whiteframe-3dp">
                     <md-button class="aso-btn-green" aria-label="menu" ng-click="$mdMenu.open($event)">
@@ -24,8 +24,8 @@
                         </md-button>
                     </md-menu-item>
                 </md-menu-content>
-            </md-menu>
 
+            </md-menu>
         </div>
     </div>
 </div>

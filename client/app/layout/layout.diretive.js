@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('app.layout')
-        // quickview
+    // quickview
         .directive('toggleQuickview', toggleQuickview)
 
         .directive('uiPreloader', ['$rootScope', uiPreloader]);
@@ -20,7 +20,7 @@
             // #app not #body
             var $body = $('#app');
 
-            $el.on('click', function(e) {
+            $el.on('click', function (e) {
                 var qvClass = 'quickview-open';
 
                 if (attrs.target) {
@@ -39,22 +39,22 @@
     function uiPreloader($rootScope) {
         return {
             restrict: 'A',
-            template:'<span class="bar"></span>',
-            link: function(scope, el, attrs) {
+            template: '<span class="bar"></span>',
+            link: function (scope, el, attrs) {
                 el.addClass('preloaderbar hide');
-                scope.$on('$stateChangeStart', function(event) {
+                scope.$on('$stateChangeStart', function (event) {
                     el.removeClass('hide').addClass('active');
                 });
-                scope.$on('$stateChangeSuccess', function( event, toState, toParams, fromState ) {
-                    event.targetScope.$watch('$viewContentLoaded', function(){
+                scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState) {
+                    event.targetScope.$watch('$viewContentLoaded', function () {
                         el.addClass('hide').removeClass('active');
                     });
                 });
 
-                scope.$on('preloader:active', function(event) {
+                scope.$on('preloader:active', function (event) {
                     el.removeClass('hide').addClass('active');
                 });
-                scope.$on('preloader:hide', function(event) {
+                scope.$on('preloader:hide', function (event) {
                     el.addClass('hide').removeClass('active');
                 });
             }
