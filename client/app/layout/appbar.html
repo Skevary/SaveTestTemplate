@@ -1,14 +1,31 @@
-<div class="aso-appbar" ng-controller="AppBarCtrl" >
+<div class="aso-appbar" ng-controller="AppBarCtrl">
     <div class="row">
         <div class="col-xs-3 aso-header-wrapper">
             <h1 class="section-header">{{header}}</h1>
         </div>
         <div class="col-sm-9 aso-appbar-wrapper">
-            <div class="md-button-group aso-btn-group pull-right md-whiteframe-3dp">
-                <md-button class="aso-btn-green"><i class="fa fa-facebook-official"></i> APP</md-button>
-                <md-button class="aso-btn-blue">APP PROFILE</md-button>
-                <md-button class="aso-btn-dark-blue">ADD APP</md-button>
-            </div>
+            <md-menu md-position-mode="target"md-offset="0 40">
+
+                <div class="aso-btn-group md-button-group pull-right md-whiteframe-3dp">
+                    <md-button class="aso-btn-green" aria-label="menu" ng-click="$mdMenu.open($event)">
+                        <i class="fa {{activeApp.icon}}"></i>
+                        <span class="aso-lang-text">{{activeApp.text}}</span>
+                        <i class="fa fa-caret-down aso-dropdown-icon"></i>
+                    </md-button>
+                    <md-button class="aso-btn-blue">APP PROFILE</md-button>
+                    <md-button class="aso-btn-dark-blue">ADD APP</md-button>
+                </div>
+
+                <md-menu-content width="2" class="aso-dropdown-content">
+                    <md-menu-item ng-repeat="app in apps">
+                        <md-button ng-click="setApp(app)">
+                            <md-icon class="fa {{app.icon}}"></md-icon>
+                            <span class="lang-text">{{app.text}}</span>
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+
         </div>
     </div>
 </div>

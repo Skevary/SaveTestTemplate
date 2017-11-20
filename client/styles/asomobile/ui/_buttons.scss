@@ -1,10 +1,11 @@
 // mixin
 @mixin aso-buttons($background-color, $max-width) {
-    color:  #fff !important;
+    color: #fff !important;
     background-color: $background-color !important;
     max-width: $max-width !important;
     height: $btn-height;
 }
+
 //
 
 // variable
@@ -30,4 +31,3 @@ $btn-height: 40px;
 .aso-btn-dark-blue {
     @include aso-buttons(#0277bd, $short-btn-width);
 }
-//
